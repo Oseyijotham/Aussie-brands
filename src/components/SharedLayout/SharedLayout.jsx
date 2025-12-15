@@ -17,7 +17,7 @@ import { useState,Suspense } from 'react';
 import { logOut } from '../../redux/AuthRedux/operations';
 import { useDispatch, useSelector } from 'react-redux';
 import { useAuthHook } from '../../customHook/customHook';
-import logoImage from './GeoPets.png';
+import logoImage from './GeoBrands.png';
 import { useMediaQuery } from 'react-responsive';
 import svg from './icons.svg';
 import clsx from 'clsx';
@@ -49,9 +49,9 @@ export const SharedLayout = () => {
               <img src={logoImage} alt="Logo" width="80px" />
             </Frame>
             <IconLabelWrapper>
-              <IconLabelStart>Geo</IconLabelStart>
+              <IconLabelStart>Aussie</IconLabelStart>
               <IconLabelEnd>
-                <i>Pets</i>
+                <i>Brands</i>
               </IconLabelEnd>
             </IconLabelWrapper>
           </Logo>
@@ -65,7 +65,7 @@ export const SharedLayout = () => {
         ></div>
         <nav>
           <Linker to="/sharedLayout/Home">Home</Linker>
-          <Linker to="/sharedLayout/placesFinder">Pet Services</Linker>
+          <Linker to="/sharedLayout/placesFinder">Brand Services</Linker>
           <Linker to="/sharedLayout/apiCreator">Create Your API</Linker>
           <Linker to="/sharedLayout/profile">My Profile</Linker>
           <Button type="button" onClick={() => dispatch(logOut())}>
@@ -134,7 +134,7 @@ export const SharedLayout = () => {
                       //handleShedular();
                     }}
                   >
-                    Pet Services
+                    Brand Services
                   </Link>
                 </li>
                 <li className={css.headerWindowNavItem}>
@@ -176,7 +176,7 @@ export const SharedLayout = () => {
               visible={true}
               height="80"
               width="80"
-              color="#9225ff"
+              color="#ffb800"
               radius="9"
               ariaLabel="three-dots-loading"
               wrapperStyle={{}}

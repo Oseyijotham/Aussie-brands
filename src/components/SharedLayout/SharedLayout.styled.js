@@ -26,10 +26,10 @@ export const Header = styled.header`
   margin-bottom: 8px;
   margin-top: 8px;
   border: none;
-  background-image: linear-gradient(to top left, #ffb800, #9225ff);
+  background-image: linear-gradient(to top left, #ffb800, #714a13);
   backdrop-filter: blur(30px);
   border-radius: 30px;
-  filter: drop-shadow(0px 16px 24px #9225ff);
+  filter: drop-shadow(0px 16px 24px #ffb800);
 
   &:hover {
   }
@@ -118,16 +118,16 @@ export const IconLabelEnd = styled.span`
   font-family: 'Comic Sans MS';
   font-size: 20px;
   font-weight: 700;
-  color: #9225ff;
+  color: #714a13;
 `;
 
 export const Burger = styled.button`
-  fill: #9225ff;
+  fill: #714a13;
   cursor: pointer;
   border: none;
   background-color: transparent;
   &:hover {
-    fill: #280a46;
+    fill: #3f2712;
   }
   @media (min-width: 768px) {
     display: none;
@@ -139,7 +139,7 @@ export const Linker = styled(NavLink)`
   padding: 8px 12px;
   border-radius: 4px;
   text-decoration: none;
-  text-align:center;
+  text-align: center;
   color: #fff;
   font-weight: 700;
   position: relative;
@@ -154,7 +154,7 @@ export const Linker = styled(NavLink)`
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #9225ff;
+    background-color: #714a13;
     transform: scaleX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: left;
@@ -197,7 +197,7 @@ export const Button = styled.button`
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #9225ff;
+    background-color: #714a13;
     transform: scaleX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: left;

@@ -1,5 +1,5 @@
 .taskBook {
-    background-image: linear-gradient(to top left, #ffb800, #9225ff);
+    background-image: linear-gradient(to top left, #ffb800, #714a13);
   border-radius: 30px;
   border: none;
   padding: 10px;
@@ -39,7 +39,7 @@
 }
 
 .formSection {
-  background-color: #280a46;
+  background-color: #3F2712;
   border: 3px solid #ffb800;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
   border-radius: 30px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: inset 0 0 10px 5px  #9225ff;
+  box-shadow: inset 0 0 10px 5px  #ffb800;
   }
 
 
@@ -61,12 +61,12 @@
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   cursor: pointer;
-  background-color: #9225ff;
+  background-image: linear-gradient(to bottom left, #ffb800, #714A13);
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.3));
 }
 
 .button:hover{
- background-image: linear-gradient(to top left, #ffb800, #9225ff);
+ background-image: linear-gradient(to bottom right, #714A13, #ffb800);
 }
 
 .button:disabled {
@@ -89,7 +89,7 @@
     border-radius: 30px;
     padding: 4px;
  font-family: 'Work Sans', sans-serif;
- background-image: linear-gradient(to top left, #ffb800, #9225ff);
+ background-image: linear-gradient(to top left, #ffb800, #714a13);
 }
 
 @media screen and (min-width: 768px){
@@ -115,7 +115,7 @@ flex-direction: column;}
     margin-top: 3px;
     border: 1px solid #fff;
     box-shadow: inset 0 0 15px 10px rgba(0, 0, 0, 0.5);
-    background-color: #9225ff;
+    background-color: #3F2712;
     width:100%;
 }
 

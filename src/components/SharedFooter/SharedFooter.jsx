@@ -17,7 +17,7 @@ export const SharedFooter = () => {
               visible={true}
               height="80"
               width="80"
-              color="#9225ff"
+              color="#ffb800"
               radius="9"
               ariaLabel="three-dots-loading"
               wrapperStyle={{}}
@@ -31,7 +31,7 @@ export const SharedFooter = () => {
       <div className={css.footer}>
         © 2025 - <span className={css.start}>Geo</span>
         <span className={css.end}>
-          <i>Pets</i>
+          <i>Brands</i>
         </span>
       </div>
     </>

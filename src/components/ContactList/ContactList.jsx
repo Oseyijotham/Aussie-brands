@@ -113,7 +113,7 @@ export const ContactList = ({ lowerLimitProp, upperLimitProp, lowerLimitSetter, 
 
   return (
     <div className={css.contactsSection}>
-      <h3 className={css.contactsTitle}>Places List</h3>
+      <h3 className={css.contactsTitle}>Locations List</h3>
       {children}
       <div style={{ position: 'relative' }}>
         {console.log(isUpdateLoading)}
@@ -124,7 +124,7 @@ export const ContactList = ({ lowerLimitProp, upperLimitProp, lowerLimitSetter, 
                 visible={true}
                 height="60"
                 width="60"
-                color="#9225ff"
+                color="#ffb800"
                 radius="9"
                 ariaLabel="three-dots-loading"
                 wrapperStyle={{}}
@@ -132,17 +132,18 @@ export const ContactList = ({ lowerLimitProp, upperLimitProp, lowerLimitSetter, 
               />
               {isLoading && (
                 <p className={css.centerLabel}>
-                  Please be patient, fetching places can take up to 60 seconds
+                  Please be patient, fetching locations can take up to 60
+                  seconds
                 </p>
               )}
               {isUpdateLoading && isTrue === true && (
                 <p className={css.centerLabel}>
-                  Saving place to your API Database
+                  Saving locations to your API Database
                 </p>
               )}
               {isUpdateLoading && isTrue === false && (
                 <p className={css.centerLabel}>
-                  Removing place from your API Database
+                  Removing location from your API Database
                 </p>
               )}
             </div>
@@ -171,7 +172,7 @@ export const ContactList = ({ lowerLimitProp, upperLimitProp, lowerLimitSetter, 
                       />
                       :{' '}
                       <span className={css.contactsPhone} data-id={place.id}>
-                        {place.properties.names.primary}
+                        {place.properties.addresses[0].freeform}
                       </span>
                     </span>
                     {place.properties.socials.length !== 0 && (

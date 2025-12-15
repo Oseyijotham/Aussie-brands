@@ -9,7 +9,7 @@ import {
 import { selectUser } from '../../redux/AuthRedux/selectors';
 import { retrieveApiKey, fetchCatPics, fetchDogPics } from '../../redux/AppRedux/operations';
 import icon from './list2.svg';
-import PetServices from './PetServices.png';
+import BrandServices from './BrandServices.png';
 import API from './API.png';
 import Profile from './Profile.png';
 import { useMediaQuery } from 'react-responsive';
@@ -46,7 +46,30 @@ useEffect(() => {
       <div>
         <div className={css.homeDisplayIntro}>
           <div className={css.homeIconWrapper}>
-            <img src={icon} alt="icon" className={css.homeIcon} />
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              className={css.homeIcon}
+            >
+              <defs>
+                <linearGradient
+                  id="icon-gradient"
+                  x1="100%"
+                  y1="100%"
+                  x2="0%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#ffb800" />
+                  <stop offset="100%" stop-color="#714a13" />
+                </linearGradient>
+              </defs>
+
+              <path
+                d="M12 2h20v4h-20v-4zM12 14h20v4h-20v-4zM12 26h20v4h-20v-4zM0 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 16c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 28c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4z"
+                fill="url(#icon-gradient)"
+              />
+            </svg>
           </div>
           <span>
             <span className={css.homeDisplayTitle}>
@@ -57,20 +80,41 @@ useEffect(() => {
             </span>
             <span className={css.homeDisplaySlogan}>
               <i>
-                Here at GeoPets we provide you with information on all pet
-                related services and facilities for any country of your choice,
-                from Dog Walkers to Holistic Animal Care we've got you covered.
+                With AussieBrands, finding brand locations across Australia is
+                effortless. From local favourites to international brands, we
+                provide accurate location information nationwide—keeping you
+                connected to the brands you rely on.
               </i>
             </span>
             <span className={css.homeDisplaySloganMobile}>
-              <i>
-                Here at GeoPets we provide you with information on all pet
-                related services and facilities.
-              </i>
+              <i>Connecting Brands to Places Nationwide.</i>
             </span>
           </span>
           <div className={css.homeIconWrapper}>
-            <img src={icon} alt="icon" className={css.homeIcon} />
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              className={css.homeIcon}
+            >
+              <defs>
+                <linearGradient
+                  id="icon-gradient"
+                  x1="100%"
+                  y1="100%"
+                  x2="0%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#ffb800" />
+                  <stop offset="100%" stop-color="#714a13" />
+                </linearGradient>
+              </defs>
+
+              <path
+                d="M12 2h20v4h-20v-4zM12 14h20v4h-20v-4zM12 26h20v4h-20v-4zM0 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 16c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 28c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4z"
+                fill="url(#icon-gradient)"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -97,8 +141,8 @@ useEffect(() => {
               boxShadow: `
               ${
                 isOneHovered
-                  ? 'inset 0 0 50px 30px #9225ff'
-                  : 'inset 0 0 10px 5px  #9225ff'
+                  ? 'inset 0 0 50px 30px #ffb800'
+                  : 'inset 0 0 10px 5px  #ffb800'
               }
               `,
             }}
@@ -114,18 +158,18 @@ useEffect(() => {
                 <div className={css.catOverlay}>
                   <img
                     className={css.routeImage}
-                    srcSet={PetServices}
-                    src={PetServices} // Fallback
+                    srcSet={BrandServices}
+                    src={BrandServices} // Fallback
                     alt="PetServices"
                   />
                   <p className={css.catWardDescription}>
                     <span className={css.catWardDescriptionbackground}>
-                      Find Pet Services anywhere in the world.
+                      Explore Brands by Location, Worldwide..
                     </span>
                   </p>
                 </div>
                 <span className={css.movieName}>
-                  <span className={css.wardName}>Pet Services</span>
+                  <span className={css.wardName}>Brand Services</span>
                 </span>
               </Link>
             </div>
@@ -147,8 +191,8 @@ useEffect(() => {
               boxShadow: `
               ${
                 isTwoHovered
-                  ? 'inset 0 0 50px 30px #9225ff'
-                  : 'inset 0 0 10px 5px  #9225ff'
+                  ? 'inset 0 0 50px 30px #ffb800'
+                  : 'inset 0 0 10px 5px  #ffb800'
               }
               `,
             }}
@@ -197,8 +241,8 @@ useEffect(() => {
               boxShadow: `
               ${
                 isThreeHovered
-                  ? 'inset 0 0 50px 30px #9225ff'
-                  : 'inset 0 0 10px 5px  #9225ff'
+                  ? 'inset 0 0 50px 30px #ffb800'
+                  : 'inset 0 0 10px 5px  #ffb800'
               }
               `,
             }}

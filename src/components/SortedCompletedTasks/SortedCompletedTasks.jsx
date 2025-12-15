@@ -146,7 +146,7 @@ export const Contacts = () => {
                   visible={true}
                   height="80"
                   width="80"
-                  color="#9225ff"
+                  color="#ffb800"
                   radius="9"
                   ariaLabel="three-dots-loading"
                   wrapperStyle={{}}
@@ -263,7 +263,7 @@ export const Contacts = () => {
               visible={true}
               height="80"
               width="80"
-              color="#9225ff"
+              color="#ffb800 "
               radius="9"
               ariaLabel="three-dots-loading"
               wrapperStyle={{}}

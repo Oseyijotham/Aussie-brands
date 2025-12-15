@@ -2,9 +2,9 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import Notiflix from 'notiflix';
 
-//axios.defaults.baseURL = 'http://localhost:8001/api';
+axios.defaults.baseURL = 'http://localhost:8001/api';
 
-axios.defaults.baseURL = 'https://geo-pets-backend-qokl.onrender.com/api';
+//axios.defaults.baseURL = 'https://geo-pets-backend-qokl.onrender.com/api';
 
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -19,7 +19,7 @@ export const register = createAsyncThunk(
   'auth/register',
   async ({ firstName, lastName, email, phone, password }, thunkAPI) => {
     Notiflix.Loading.pulse('Registering Your Account...', {
-      svgColor: '#9225ff',
+      svgColor: '#ffb800',
       fontFamily: 'DM Sans',
     });
     try {
@@ -48,7 +48,7 @@ export const logIn = createAsyncThunk(
   'auth/login',
   async ({ email, password }, thunkAPI) => {
     Notiflix.Loading.pulse('Logging You In...', {
-      svgColor: '#9225ff',
+      svgColor: '#ffb800',
       fontFamily: 'DM Sans',
     });
     try {
@@ -74,7 +74,7 @@ export const clearData = createAsyncThunk('auth/clear', async (_, thunkAPI) => {
 
 export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
   Notiflix.Loading.pulse('Logging You Out...', {
-    svgColor: '#9225ff',
+    svgColor: '#ffb800',
     fontFamily: 'DM Sans',
   });
   try {
@@ -139,7 +139,7 @@ export const updateAvatar = createAsyncThunk(
   'auth/updateAvatar',
   async (file, thunkAPI) => {
     Notiflix.Loading.pulse('Updating Your Avatar...', {
-      svgColor: '#9225ff',
+      svgColor: '#ffb800',
       fontFamily: 'DM Sans',
     });
     console.log(file);

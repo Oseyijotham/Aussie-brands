@@ -38,7 +38,7 @@ export const Filter = () => {
   };
   const bestMatches = places.filter(
     place =>
-      place.properties.names.primary
+      place.properties.addresses[0].freeform
         .toLowerCase()
         .includes(filterValue.trim().toLowerCase()) && filterValue.trim() !== ''
   );
@@ -63,7 +63,7 @@ export const Filter = () => {
   return (
     <div className={css.contactList}>
       <label htmlFor={searchTermId}>
-        <span className={css.formLabel}>Search Places by Name:</span>
+        <span className={css.formLabel}>Search Locations by Street Name:</span>
         <input
           type="text"
           placeholder="Enter Place Name"
@@ -87,7 +87,7 @@ export const Filter = () => {
                 visible={true}
                 height="60"
                 width="60"
-                color="#9225ff"
+                color="#ffb800"
                 radius="9"
                 ariaLabel="three-dots-loading"
                 wrapperStyle={{}}
@@ -95,17 +95,18 @@ export const Filter = () => {
               />
               {isLoading && (
                 <p className={css.centerLabel}>
-                  Please be patient, fetching places can take up to 60 seconds
+                  Please be patient, fetching Locations can take up to 60
+                  seconds
                 </p>
               )}
               {isUpdateLoading && isTrue === true && (
                 <p className={css.centerLabel}>
-                  Saving place to your API Database
+                  Saving Location to your API Database
                 </p>
               )}
               {isUpdateLoading && isTrue === false && (
                 <p className={css.centerLabel}>
-                  Removing place from your API Database
+                  Removing Location from your API Database
                 </p>
               )}
             </div>
@@ -135,7 +136,7 @@ export const Filter = () => {
                       />
                       :{' '}
                       <span className={css.contactsPhone} data-id={place.id}>
-                        {place.properties.names.primary}
+                        {place.properties.addresses[0].freeform}
                       </span>
                     </span>
                     {place.properties.socials.length !== 0 && (

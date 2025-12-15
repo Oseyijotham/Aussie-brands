@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import 'flatpickr/dist/themes/material_blue.css';
-import Categories from '../Options/categories';
+import Brands from '../Options/brandsList';
 import Countries from '../Options/countries_sorted_by_full_name';
 
 export const ContactForm = ({lowerLimitSetter, upperLimitSetter, children }) => {
@@ -26,11 +26,10 @@ export const ContactForm = ({lowerLimitSetter, upperLimitSetter, children }) => 
 
   const handleSubmit = event => {
     event.preventDefault();
-    const category = event.target[0].value;
-    const country = event.target[1].value;
+    const brand = event.target[0].value;
 
     
-    dispatch(searchPlaces({ category: category, country: country }));
+    dispatch(searchPlaces({ brand: brand }));
     
     lowerLimitSetter(0);
     upperLimitSetter(4);
@@ -42,17 +41,12 @@ export const ContactForm = ({lowerLimitSetter, upperLimitSetter, children }) => 
     dispatch(saveCategoryName(evt.target.value));
   }
 
-   const handleCountryChange = evt => {
-    
-     dispatch(saveCountryName(evt.target.value));
-   };
-
   return (
     <div className={css.taskBook}>
-      <h2 className={css.formTitle}>Pet Services</h2>
+      <h2 className={css.formTitle}>Brand Services</h2>
       <form onSubmit={handleSubmit} className={css.formSection}>
         <label className={css.loginLabel}>
-          <span className={css.formLabel}>Categories:</span>
+          <span className={css.formLabel}>Brands:</span>
           <select
             className={css.formInput}
             onChange={handleCategoryChange}
@@ -72,41 +66,14 @@ export const ContactForm = ({lowerLimitSetter, upperLimitSetter, children }) => 
                 color: 'black',
               }}
             >
-              Choose a category of pet service
+              Choose a Brand
             </option>
-            {Categories.map(categorie => (
-              <option value={categorie}>{categorie}</option>
+            {Brands.map(Brand => (
+              <option value={Brand.val}>{Brand.label}</option>
             ))}
           </select>
         </label>
-        <label>
-          <span className={css.formLabel}>Country:</span>
-          <select
-            className={css.formInput}
-            onChange={handleCountryChange}
-            value={countryName}
-            name="countryName"
-            required
-            title="Choose a Country"
-          >
-            <option
-              value=""
-              disabled
-              selected
-              style={{
-                fontFamily: 'Work Sans',
-                fontWeight: 700,
-                backgroundColor: 'grey',
-                color: 'black',
-              }}
-            >
-              Choose a country
-            </option>
-            {Countries.map(country => (
-              <option value={country.country}>{country.full_name}</option>
-            ))}
-          </select>
-        </label>
+        
         <div className={css.buttonArea}>
           <button
             type="submit"

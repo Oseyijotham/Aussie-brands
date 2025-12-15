@@ -43,9 +43,9 @@ export const fetchContacts = createAsyncThunk(
 
 export const searchPlaces = createAsyncThunk(
   'places/searchPlaces',
-  async ({ category, country }, thunkAPI) => {
+  async ({ brand }, thunkAPI) => {
     try {
-      const response = await axios.post(`/places/`, { category, country });
+      const response = await axios.post(`/places/`, { brand });
       console.log(response.data);
       return response.data;
     } catch (error) {

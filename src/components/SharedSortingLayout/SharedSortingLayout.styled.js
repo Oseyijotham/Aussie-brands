@@ -18,7 +18,7 @@ export const Header = styled.header`
   margin-left: auto;
   margin-right: auto;
   border: none;
-  background-image: linear-gradient(to top left, #ffb800, #9225ff);
+  background-image: linear-gradient(to top left, #ffb800, #714a13);
   backdrop-filter: blur(30px);
   border-radius: 30px;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.3));
@@ -60,7 +60,7 @@ export const Link = styled(NavLink)`
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #9225ff;
+    background-color: #714a13;
     transform: scaleX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: left;
