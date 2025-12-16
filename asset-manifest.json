@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aussie-brands/static/css/main.77847ef5.css",
-    "main.js": "/Aussie-brands/static/js/main.fadebe53.js",
+    "main.js": "/Aussie-brands/static/js/main.b54f8b64.js",
     "static/css/527.13f1012d.chunk.css": "/Aussie-brands/static/css/527.13f1012d.chunk.css",
     "static/js/527.60142d85.chunk.js": "/Aussie-brands/static/js/527.60142d85.chunk.js",
     "static/css/61.cc6409a2.chunk.css": "/Aussie-brands/static/css/61.cc6409a2.chunk.css",
@@ -9,7 +9,7 @@
     "static/css/232.1f0cfda3.chunk.css": "/Aussie-brands/static/css/232.1f0cfda3.chunk.css",
     "static/js/232.c090416d.chunk.js": "/Aussie-brands/static/js/232.c090416d.chunk.js",
     "static/css/305.6c9a8363.chunk.css": "/Aussie-brands/static/css/305.6c9a8363.chunk.css",
-    "static/js/305.dea9200e.chunk.js": "/Aussie-brands/static/js/305.dea9200e.chunk.js",
+    "static/js/305.a7727850.chunk.js": "/Aussie-brands/static/js/305.a7727850.chunk.js",
     "static/css/461.348f5d63.chunk.css": "/Aussie-brands/static/css/461.348f5d63.chunk.css",
     "static/js/461.40ee7665.chunk.js": "/Aussie-brands/static/js/461.40ee7665.chunk.js",
     "static/css/169.58ad4a20.chunk.css": "/Aussie-brands/static/css/169.58ad4a20.chunk.css",
@@ -40,7 +40,7 @@
     "index.html": "/Aussie-brands/index.html",
     "static/media/list2.svg": "/Aussie-brands/static/media/list2.143e2e7e12285cdac47190b8872b6f89.svg",
     "main.77847ef5.css.map": "/Aussie-brands/static/css/main.77847ef5.css.map",
-    "main.fadebe53.js.map": "/Aussie-brands/static/js/main.fadebe53.js.map",
+    "main.b54f8b64.js.map": "/Aussie-brands/static/js/main.b54f8b64.js.map",
     "527.13f1012d.chunk.css.map": "/Aussie-brands/static/css/527.13f1012d.chunk.css.map",
     "527.60142d85.chunk.js.map": "/Aussie-brands/static/js/527.60142d85.chunk.js.map",
     "61.cc6409a2.chunk.css.map": "/Aussie-brands/static/css/61.cc6409a2.chunk.css.map",
@@ -48,7 +48,7 @@
     "232.1f0cfda3.chunk.css.map": "/Aussie-brands/static/css/232.1f0cfda3.chunk.css.map",
     "232.c090416d.chunk.js.map": "/Aussie-brands/static/js/232.c090416d.chunk.js.map",
     "305.6c9a8363.chunk.css.map": "/Aussie-brands/static/css/305.6c9a8363.chunk.css.map",
-    "305.dea9200e.chunk.js.map": "/Aussie-brands/static/js/305.dea9200e.chunk.js.map",
+    "305.a7727850.chunk.js.map": "/Aussie-brands/static/js/305.a7727850.chunk.js.map",
     "461.348f5d63.chunk.css.map": "/Aussie-brands/static/css/461.348f5d63.chunk.css.map",
     "461.40ee7665.chunk.js.map": "/Aussie-brands/static/js/461.40ee7665.chunk.js.map",
     "169.58ad4a20.chunk.css.map": "/Aussie-brands/static/css/169.58ad4a20.chunk.css.map",
@@ -68,6 +68,6 @@
   },
   "entrypoints": [
     "static/css/main.77847ef5.css",
-    "static/js/main.fadebe53.js"
+    "static/js/main.b54f8b64.js"
   ]
 }
