@@ -120,7 +120,7 @@ export const TasksCompletedList = ({ children }) => {
                   >
                     <span className={css.contactsData} data-id={place._id}>
                       <span className={css.contactsPhone} data-id={place._id}>
-                        {place.data.properties.names.primary}
+                        {place.data.properties.addresses[0].freeform}
                       </span>
                     </span>
 
